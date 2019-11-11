@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        input[type=text], input[type=email], input[type=message] select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
     input[type=submit] {
     background-color: #4CAF50;
     border: none;
@@ -16,32 +25,36 @@
     margin: 4px 2px;
     cursor: pointer;
   }
+  textarea{
+      width: 550px;
+  }
         form{
             background-color: aliceblue;
+            max-width: 600px;
         }
+
     </style>
 </head>
 <body>
     <form name="contact" method="POST" data-netlify="true">
         <fieldset>
             <legend>how cool are you?</legend>
-        <p>
-          <label>Your Nickname: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>How old are you?</p>
+       
+        <label>Your Nickname:</label> 
+        <input type="text" name="name" />  
+        <label>Your Email:</label>
+        <input type="email" name="email" />
+        <label>Message:</label>
+        <textarea name="message"></textarea>
+       
+        <fieldset>How cool are you?
 <ol>
  <li><input type="radio" name="cool" value="under24" checked> Literally The Fonz</li>
  <li><input type="radio" name="cool" value="25-34"> Im Pretty cool</li>
  <li><input type="radio" name="cool" value="35-44"> Could be cooler</li>
  <li><input type="radio" name="cool" value="over45"> Modern day Henry Winkler</li>
 </ol>
+</fieldset>
         <p>
                 <input type="submit" value="Submit">
         </p>
