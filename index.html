@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-        input[type=text], input[type=email], input[type=message] select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-    input[type=submit] {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  textarea{
-      width: 550px;
-  }
-        form{
-            background-color: rgba(252, 109, 209, 0.589);
-            max-width: 600px;
-        }
-
+      input[type="text"],
+      input[type="email"],
+      input[type="message"] select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="button"] {
+        background-color: #4caf50;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      textarea {
+        width: 550px;
+        max-width: 100%;
+      }
+      form {
+        background-color: rgba(252, 109, 209, 0.589);
+        max-width: 600px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <form name="contact" method="POST" data-netlify="true">
-        <fieldset>
-            <legend>how cool are you?</legend>
-       
-        <label>Your Nickname:<input type="text" name="name" />  </label> 
-        <label>Your Email:<input type="email" name="email" /></label>
+      <fieldset>
+        <legend>how cool are you?</legend>
+
+        <label>Your Nickname:<input type="text" name="name" /> </label>
+        <label>Your Email:<input type="email" name="email"/></label>
         <label>Message:<textarea name="message"></textarea></label>
-       
-        <fieldset>How cool are you?
-<ol>
- <li><input type="radio" name="cool" value="under24" checked> Literally The Fonz</li>
- <li><input type="radio" name="cool" value="25-34"> Im Pretty cool</li>
- <li><input type="radio" name="cool" value="35-44"> Could be cooler</li>
- <li><input type="radio" name="cool" value="over45"> Modern day Henry Winkler</li>
-</ol>
-</fieldset>
-        <p>
-                <input type="submit" value="Submit">
-        </p>
-        
+
+        <fieldset>
+         <legend> How cool are you?</legend>
+          <ol>
+            <li>
+              <input type="radio" name="cool" value="under24" checked />
+              Literally The Fonz
+            </li>
+            <li>
+              <input type="radio" name="cool" value="25-34" /> Im Pretty cool
+            </li>
+            <li>
+              <input type="radio" name="cool" value="35-44" /> Could be cooler
+            </li>
+            <li>
+              <input type="radio" name="cool" value="over45" /> Modern day Henry
+              Winkler
+            </li>
+          </ol>
         </fieldset>
-      </form>
-</body>
+        <p>
+          <input type="button" value="Submit" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
 </html>
